@@ -13,21 +13,23 @@
 </head>
 <body>
   <div class="intro" id="intro" aria-label="Welcome">
-    <div class="intro-card" id="introCard">
-      <div class="intro-face intro-front">
-        <img src="coding-hero.png" alt="Developer working at a computer">
-        <div class="intro-shade"></div>
-        <div class="intro-front-label"><span class="pulse"></span> PERSONAL PORTFOLIO <span class="intro-year">2026</span></div>
+    <div class="intro-code-screen" id="codeScreen">
+      <div class="code-window">
+        <div class="code-titlebar"><div class="window-dots"><i></i><i></i><i></i></div><span>abdel-monem / portfolio.js</span><b>⌘</b></div>
+        <div class="code-content"><aside class="line-numbers" aria-hidden="true">01<br>02<br>03<br>04<br>05<br>06<br>07<br>08<br>09<br>10</aside><pre id="typedCode" aria-label="Animated code"></pre><span class="typing-cursor"></span></div>
+        <div class="code-status"><span><i></i> SYSTEM INITIALIZING</span><span id="loadPercent">0%</span></div>
+        <div class="load-track"><span id="loadBar"></span></div>
       </div>
-      <div class="intro-face intro-back">
-        <div class="terminal"><span></span><span></span><span></span><b>~/welcome</b></div>
-        <p class="eyebrow">A NEW JOURNEY STARTS HERE</p>
-        <h1>Hello, I'm<br><span>Abdel Monem.</span></h1>
-        <p>Software Engineering student, curious mind, and a developer in progress.</p>
-        <button class="btn btn-primary" id="enterBtn">Explore portfolio <span>↗</span></button>
-      </div>
+      <div class="intro-orb orb-one"></div><div class="intro-orb orb-two"></div>
+      <p class="intro-caption">BUILDING SOMETHING MEANINGFUL <span>✦</span></p>
     </div>
-    <p class="intro-hint">DESIGNED TO SHARE MY JOURNEY</p>
+    <div class="welcome-screen" id="welcomeScreen" aria-hidden="true">
+      <div class="welcome-glow"></div><div class="welcome-chip"><span></span> PORTFOLIO READY</div>
+      <p class="welcome-kicker">HELLO, WORLD!</p><h1>Welcome<span>.</span></h1>
+      <p class="welcome-name">I'm <strong>Abdel Monem</strong><br>Software Engineering Student</p>
+      <button class="btn btn-primary" id="enterBtn">Enter my portfolio <span>↗</span></button>
+      <div class="welcome-foot">DESIGNED & BUILT WITH CURIOSITY</div>
+    </div>
   </div>
 
   <header class="header">
