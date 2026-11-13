@@ -3,111 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Abdel Monem Ibrahim Mahmoud Al-Rifai, Software Engineering student at Al-Zaytoonah University of Jordan.">
-  <title>Abdel Monem Al-Rifai | Personal Portfolio</title>
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Abdel Monem Al-Rifai — Software Engineering student and aspiring software developer.">
+  <title>Abdel Monem Al-Rifai | Software Engineer in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Intro: image flips to a welcome message, then the visitor enters the portfolio. -->
-  <div class="intro" id="intro">
+  <div class="intro" id="intro" aria-label="Welcome">
     <div class="intro-card" id="introCard">
       <div class="intro-face intro-front">
         <img src="coding-hero.png" alt="Developer working at a computer">
-        <div class="intro-front-label"><span class="dot"></span> A PERSONAL PORTFOLIO</div>
+        <div class="intro-shade"></div>
+        <div class="intro-front-label"><span class="pulse"></span> PERSONAL PORTFOLIO <span class="intro-year">2026</span></div>
       </div>
       <div class="intro-face intro-back">
-        <div class="welcome-code">&lt; welcome /&gt;</div>
-        <p class="eyebrow">YOU'RE IN THE RIGHT PLACE</p>
-        <h1>Hey, welcome!<br><span>I'm Abdel Monem.</span></h1>
-        <p>Explore my journey in Software Engineering, the skills I'm building, my workshops, and my projects.</p>
-        <button class="btn primary" id="enterBtn">Explore my website <span>↗</span></button>
+        <div class="terminal"><span></span><span></span><span></span><b>~/welcome</b></div>
+        <p class="eyebrow">A NEW JOURNEY STARTS HERE</p>
+        <h1>Hello, I'm<br><span>Abdel Monem.</span></h1>
+        <p>Software Engineering student, curious mind, and a developer in progress.</p>
+        <button class="btn btn-primary" id="enterBtn">Explore portfolio <span>↗</span></button>
       </div>
     </div>
-    <p class="intro-hint">A little introduction before you explore</p>
+    <p class="intro-hint">DESIGNED TO SHARE MY JOURNEY</p>
   </div>
 
-  <header class="site-header">
-    <a class="logo" href="#home"><span>&lt;/&gt;</span> Abdel <b>Monem</b></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <header class="header">
+    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>abdel<span class="brand-light">monem</span><i>.</i></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav id="nav">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
-      <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#education">Education</a>
+      <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-image"><img src="coding-hero.png" alt="A developer coding at a laptop"></div>
-      <div class="hero-content">
-        <p class="eyebrow">HELLO, I'M</p>
-        <h1>Abdel Monem<br><span>Al-Rifai</span></h1>
-        <h2>Software Engineering Student</h2>
-        <p class="hero-description">Welcome to my personal portfolio. Here you can learn about my education, technical interests, professional workshops, and the projects I build along my learning journey.</p>
-        <div class="hero-tags"><span>Software Engineering</span><span>Always Learning</span><span>Amman, Jordan</span></div>
-        <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn outline" href="#contact">Contact me</a></div>
-        <p class="hero-note">Currently studying at Al-Zaytoonah University of Jordan</p>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="eyebrow">SOFTWARE ENGINEERING STUDENT <span class="eyebrow-line"></span></p>
+        <h1>Building ideas<br>into <span class="gradient-text">digital reality.</span></h1>
+        <p class="hero-desc">I'm <strong>Abdel Monem Al-Rifai</strong>, a Software Engineering student at Al-Zaytoonah University of Jordan. I'm developing my skills through university studies, hands-on practice, and technical workshops.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#projects">View my work <span>↗</span></a><a class="btn btn-ghost" href="#contact">Get in touch <span>↓</span></a></div>
+        <div class="hero-meta"><span><b>⌖</b> Amman, Jordan</span><span><b>✳</b> Always learning</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-glow"></div>
+        <div class="visual-frame">
+          <img src="coding-hero.png" alt="Coding workspace">
+          <div class="image-caption"><span class="caption-dot"></span><div><b>THE DEVELOPER MINDSET</b><small>Learn · Build · Improve</small></div><span class="caption-arrow">↗</span></div>
+        </div>
+        <div class="float-card float-code"><span class="float-icon">&lt;/&gt;</span><div><b>Code</b><small>Turn ideas into action</small></div></div>
+        <div class="float-card float-student"><span class="float-icon">✦</span><div><b>Student</b><small>Growing every day</small></div></div>
+        <div class="visual-index">01 <span>—</span> 06</div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-title"><p class="eyebrow">01 / ABOUT ME</p><h2>A little about <span>me.</span></h2></div>
-      <div class="about-grid">
-        <div class="about-lead">I'm Abdel Monem Ibrahim Mahmoud Al-Rifai, a Software Engineering student based in Amman, Jordan.</div>
-        <div class="about-copy"><p>I'm interested in programming and software development. Through my university studies and professional workshops, I'm building my technical knowledge and gaining a better understanding of different areas in software engineering.</p><p class="muted">This portfolio is a place to share my learning journey, certificates, and future projects.</p></div>
+    <section class="stats wrap reveal" aria-label="Portfolio highlights">
+      <div><strong>01</strong><span>University journey</span></div>
+      <div><strong>04</strong><span>Technical workshops</span></div>
+      <div><strong>∞</strong><span>Curiosity to learn</span></div>
+      <div><strong>2026</strong><span>Current chapter</span></div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>More than a student.<br><span>A work in progress.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-statement reveal"><span class="quote-mark">“</span><p>I believe good software starts with curiosity, grows through practice, and gets better with every iteration.</p><div class="signature">Abdel Monem <span>—</span></div></div>
+        <div class="about-text reveal"><p>I'm a Software Engineering student based in Amman, Jordan, with an interest in programming and building useful digital experiences. My university studies and technical workshops are helping me explore different areas of software development.</p><p>I'm currently focused on strengthening my foundations, learning new technologies, and turning what I learn into practical work.</p><div class="about-facts"><div><small>LOCATION</small><b>Amman, Jordan</b></div><div><small>UNIVERSITY</small><b>Al-Zaytoonah University</b></div><div><small>FIELD</small><b>Software Engineering</b></div></div></div>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <div class="section-title"><p class="eyebrow">02 / EDUCATION</p><h2>My <span>education.</span></h2></div>
-      <article class="education-card">
-        <div class="edu-icon">🎓</div>
-        <div><p class="card-kicker">UNIVERSITY</p><h3>Al-Zaytoonah University of Jordan</h3><p>Software Engineering</p><p class="muted">Bachelor's degree · Currently studying</p></div>
-        <span class="status">In progress</span>
-      </article>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="section-title"><p class="eyebrow">03 / TECHNICAL SKILLS</p><h2>What I'm <span>learning.</span></h2></div>
-      <p class="section-intro">These are programming subjects and technologies you mentioned. The final skill levels can be adjusted after we review your study plan and practical experience.</p>
-      <div class="skills-grid">
-        <div class="skill"><span class="skill-icon">5</span><div><h3>HTML</h3><p>Web page structure</p></div></div>
-        <div class="skill"><span class="skill-icon">3</span><div><h3>CSS</h3><p>Web page styling</p></div></div>
-        <div class="skill"><span class="skill-icon">JS</span><div><h3>JavaScript</h3><p>Web programming</p></div></div>
-        <div class="skill"><span class="skill-icon">C++</span><div><h3>C++</h3><p>Programming fundamentals</p></div></div>
-        <div class="skill"><span class="skill-icon">J</span><div><h3>Java</h3><p>Object-oriented programming</p></div></div>
+    <section class="section section-alt" id="education">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">02 / EDUCATION</p><h2>The foundation<br><span>behind the journey.</span></h2></div>
+        <article class="education-card reveal">
+          <div class="edu-symbol">Z<span>U</span></div>
+          <div class="edu-main"><p class="card-label">CURRENT EDUCATION</p><h3>Al-Zaytoonah University of Jordan</h3><p>Bachelor's Degree · Software Engineering</p><span class="edu-note">Currently studying</span></div>
+          <div class="edu-side"><span>01</span><small>ACADEMIC PATH</small></div>
+        </article>
       </div>
-      <p class="tiny-note">Skills are shown as learning areas, not as claims of professional-level expertise.</p>
     </section>
 
-    <section class="section" id="certificates">
-      <div class="section-title"><p class="eyebrow">04 / PROFESSIONAL DEVELOPMENT</p><h2>Courses & <span>certificates.</span></h2></div>
-      <div class="certificate-grid">
-        <article class="certificate"><span class="cert-index">01</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>Data Analysis</h3><p class="muted">14 November 2025</p></div><span class="cert-mark">↗</span></article>
-        <article class="certificate"><span class="cert-index">02</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>.NET Backend</h3><p class="muted">8 February 2026</p></div><span class="cert-mark">↗</span></article>
-        <article class="certificate"><span class="cert-index">03</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>Angular Frontend</h3><p class="muted">9 February 2026</p></div><span class="cert-mark">↗</span></article>
-        <article class="certificate"><span class="cert-index">04</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>System Integration</h3><p class="muted">13 February 2026</p></div><span class="cert-mark">↗</span></article>
+    <section class="section wrap" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">03 / TECHNICAL INTERESTS</p><h2>Tools I'm exploring<br><span>and learning to use.</span></h2></div>
+      <p class="section-lead reveal">A snapshot of programming languages and web technologies that are part of my learning journey. This list reflects learning areas, not claimed professional proficiency.</p>
+      <div class="tech-grid">
+        <article class="tech-card reveal"><div class="tech-top"><span>01</span><b>HTML</b><i>WEB</i></div><h3>Web Structure</h3><p>Creating the structure and content of web pages.</p><div class="tech-line"><span style="width:76%"></span></div></article>
+        <article class="tech-card reveal"><div class="tech-top"><span>02</span><b>CSS</b><i>WEB</i></div><h3>Web Styling</h3><p>Exploring layouts, visual design, and responsive pages.</p><div class="tech-line"><span style="width:63%"></span></div></article>
+        <article class="tech-card reveal"><div class="tech-top"><span>03</span><b>JS</b><i>WEB</i></div><h3>JavaScript</h3><p>Learning interactive behavior and programming logic.</p><div class="tech-line"><span style="width:48%"></span></div></article>
+        <article class="tech-card reveal"><div class="tech-top"><span>04</span><b>C++</b><i>CODE</i></div><h3>Programming</h3><p>Building problem-solving and programming fundamentals.</p><div class="tech-line"><span style="width:57%"></span></div></article>
+        <article class="tech-card reveal"><div class="tech-top"><span>05</span><b>JAVA</b><i>CODE</i></div><h3>Object-Oriented Programming</h3><p>Studying object-oriented concepts and application development.</p><div class="tech-line"><span style="width:48%"></span></div></article>
       </div>
-      <p class="tiny-note">Workshop titles and dates are transcribed from the certificates you shared.</p>
+      <p class="fine-print">Visual bars are decorative indicators of topics being explored, not measured skill ratings.</p>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-title"><p class="eyebrow">05 / MY WORK</p><h2>Selected <span>projects.</span></h2></div>
-      <div class="project-card"><div class="project-plus">＋</div><div><h3>Projects coming soon</h3><p class="muted">I will add university assignments and personal projects here as they are ready to present.</p></div></div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="section-title"><p class="eyebrow">06 / GET IN TOUCH</p><h2>Let's <span>connect.</span></h2></div>
-      <div class="contact-card">
-        <div><h3>Thanks for visiting my portfolio.</h3><p class="muted">Feel free to contact me.</p></div>
-        <div class="contact-details">
-          <a href="mailto:abdelmonem14ussat@gmail.com">✉ <span>abdelmonem14ussat@gmail.com</span></a>
-          <a href="tel:+962000000000">☎ <span>Phone number — please confirm the digits</span></a>
-          <p>⌖ <span>Amman, Jordan</span></p>
+    <section class="section section-alt" id="certificates">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="eyebrow">04 / CONTINUOUS LEARNING</p><h2>Workshops &<br><span>certificates.</span></h2></div>
+        <p class="section-lead reveal">Learning beyond the classroom through focused technical workshops.</p>
+        <div class="cert-list">
+          <article class="cert-row reveal"><span class="cert-no">01</span><div class="cert-name"><small>FLASHA · WORKSHOP</small><h3>Data Analysis</h3></div><time>14 NOV 2025</time><span class="cert-arrow">↗</span></article>
+          <article class="cert-row reveal"><span class="cert-no">02</span><div class="cert-name"><small>FLASHA · WORKSHOP</small><h3>.NET Backend</h3></div><time>08 FEB 2026</time><span class="cert-arrow">↗</span></article>
+          <article class="cert-row reveal"><span class="cert-no">03</span><div class="cert-name"><small>FLASHA · WORKSHOP</small><h3>Angular Frontend</h3></div><time>09 FEB 2026</time><span class="cert-arrow">↗</span></article>
+          <article class="cert-row reveal"><span class="cert-no">04</span><div class="cert-name"><small>FLASHA · WORKSHOP</small><h3>System Integration</h3></div><time>13 FEB 2026</time><span class="cert-arrow">↗</span></article>
         </div>
       </div>
     </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">05 / SELECTED WORK</p><h2>Ideas become<br><span>real through projects.</span></h2></div>
+      <div class="project-empty reveal"><div class="project-orbit"><span>&lt;/&gt;</span></div><div><p class="card-label">CURRENTLY IN DEVELOPMENT</p><h3>Projects are on the way.</h3><p>I'm working on building practical projects as I continue learning. This section will grow with my experience.</p></div><span class="project-status"><i></i> IN PROGRESS</span></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-wrap">
+        <div class="section-heading reveal"><p class="eyebrow">06 / CONTACT</p><h2>Have an idea?<br><span>Let's connect.</span></h2></div>
+        <div class="contact-bottom reveal"><p>I'm always glad to connect, exchange ideas, and learn about opportunities in software development.</p><div class="contact-links"><a href="mailto:abdalmnam14uss@gmail.com"><span>EMAIL</span><b>abdalmnam14uss@gmail.com ↗</b></a><a href="tel:+962777112284"><span>PHONE</span><b>+962 77 711 2284 ↗</b></a><div><span>LOCATION</span><b>Amman, Jordan</b></div></div></div>
+      </div>
+    </section>
   </main>
-  <footer><a class="logo" href="#home"><span>&lt;/&gt;</span> Abdel <b>Monem</b></a><p>Designed & built as my personal portfolio · © <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></footer>
+
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>abdel<span class="brand-light">monem</span><i>.</i></span></a><p>Designed & built with curiosity. <span>© <b id="year"></b></span></p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>

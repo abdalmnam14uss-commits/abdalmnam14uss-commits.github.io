@@ -1,21 +1,14 @@
-# Abdel Monem – Personal Portfolio
+ABDEL MONEM PERSONAL PORTFOLIO
+================================
+Files:
+- index.html: website content
+- style.css: responsive design and animations
+- script.js: intro animation, mobile navigation, scroll reveal
+- coding-hero.png: hero image used by the site
 
-## Run the website
-1. Extract this ZIP file.
-2. Open the `abdel_monem_personal_portfolio` folder in Visual Studio Code.
-3. Open `index.html` in your browser (or use the Live Server extension).
+How to publish:
+Upload ALL files to the ROOT of your GitHub Pages repository.
+Make sure index.html, style.css, script.js, and coding-hero.png are in the same folder.
+Then open Repository Settings > Pages and publish from the main branch / root folder.
 
-## Publish it online
-You can publish these static files using GitHub Pages:
-1. Create a GitHub repository.
-2. Upload `index.html`, `style.css`, `script.js`, and `coding-hero.png`.
-3. In the repository, open Settings → Pages.
-4. Choose the main branch and root folder, then save.
-
-## Personal details to confirm before publishing
-- Confirm the phone number. It is intentionally shown as a confirmation placeholder.
-- Confirm the email spelling before making the site public.
-- Add verified course/skill details after reviewing the full university study plan.
-- Add project links and a PDF CV when available.
-
-The site uses only HTML, CSS, and JavaScript. No backend is required.
+Note: Contact details on the Contact section are public when the site is published.
