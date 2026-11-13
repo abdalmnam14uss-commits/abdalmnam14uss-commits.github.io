@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Abdel Monem Ibrahim Mahmoud Al-Rifai, Software Engineering student at Al-Zaytoonah University of Jordan.">
+  <title>Abdel Monem Al-Rifai | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro: image flips to a welcome message, then the visitor enters the portfolio. -->
+  <div class="intro" id="intro">
+    <div class="intro-card" id="introCard">
+      <div class="intro-face intro-front">
+        <img src="coding-hero.png" alt="Developer working at a computer">
+        <div class="intro-front-label"><span class="dot"></span> A PERSONAL PORTFOLIO</div>
+      </div>
+      <div class="intro-face intro-back">
+        <div class="welcome-code">&lt; welcome /&gt;</div>
+        <p class="eyebrow">YOU'RE IN THE RIGHT PLACE</p>
+        <h1>Hey, welcome!<br><span>I'm Abdel Monem.</span></h1>
+        <p>Explore my journey in Software Engineering, the skills I'm building, my workshops, and my projects.</p>
+        <button class="btn primary" id="enterBtn">Explore my website <span>↗</span></button>
+      </div>
+    </div>
+    <p class="intro-hint">A little introduction before you explore</p>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#home"><span>&lt;/&gt;</span> Abdel <b>Monem</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+      <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"><img src="coding-hero.png" alt="A developer coding at a laptop"></div>
+      <div class="hero-content">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Abdel Monem<br><span>Al-Rifai</span></h1>
+        <h2>Software Engineering Student</h2>
+        <p class="hero-description">Welcome to my personal portfolio. Here you can learn about my education, technical interests, professional workshops, and the projects I build along my learning journey.</p>
+        <div class="hero-tags"><span>Software Engineering</span><span>Always Learning</span><span>Amman, Jordan</span></div>
+        <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn outline" href="#contact">Contact me</a></div>
+        <p class="hero-note">Currently studying at Al-Zaytoonah University of Jordan</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-title"><p class="eyebrow">01 / ABOUT ME</p><h2>A little about <span>me.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-lead">I'm Abdel Monem Ibrahim Mahmoud Al-Rifai, a Software Engineering student based in Amman, Jordan.</div>
+        <div class="about-copy"><p>I'm interested in programming and software development. Through my university studies and professional workshops, I'm building my technical knowledge and gaining a better understanding of different areas in software engineering.</p><p class="muted">This portfolio is a place to share my learning journey, certificates, and future projects.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-title"><p class="eyebrow">02 / EDUCATION</p><h2>My <span>education.</span></h2></div>
+      <article class="education-card">
+        <div class="edu-icon">🎓</div>
+        <div><p class="card-kicker">UNIVERSITY</p><h3>Al-Zaytoonah University of Jordan</h3><p>Software Engineering</p><p class="muted">Bachelor's degree · Currently studying</p></div>
+        <span class="status">In progress</span>
+      </article>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-title"><p class="eyebrow">03 / TECHNICAL SKILLS</p><h2>What I'm <span>learning.</span></h2></div>
+      <p class="section-intro">These are programming subjects and technologies you mentioned. The final skill levels can be adjusted after we review your study plan and practical experience.</p>
+      <div class="skills-grid">
+        <div class="skill"><span class="skill-icon">5</span><div><h3>HTML</h3><p>Web page structure</p></div></div>
+        <div class="skill"><span class="skill-icon">3</span><div><h3>CSS</h3><p>Web page styling</p></div></div>
+        <div class="skill"><span class="skill-icon">JS</span><div><h3>JavaScript</h3><p>Web programming</p></div></div>
+        <div class="skill"><span class="skill-icon">C++</span><div><h3>C++</h3><p>Programming fundamentals</p></div></div>
+        <div class="skill"><span class="skill-icon">J</span><div><h3>Java</h3><p>Object-oriented programming</p></div></div>
+      </div>
+      <p class="tiny-note">Skills are shown as learning areas, not as claims of professional-level expertise.</p>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="section-title"><p class="eyebrow">04 / PROFESSIONAL DEVELOPMENT</p><h2>Courses & <span>certificates.</span></h2></div>
+      <div class="certificate-grid">
+        <article class="certificate"><span class="cert-index">01</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>Data Analysis</h3><p class="muted">14 November 2025</p></div><span class="cert-mark">↗</span></article>
+        <article class="certificate"><span class="cert-index">02</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>.NET Backend</h3><p class="muted">8 February 2026</p></div><span class="cert-mark">↗</span></article>
+        <article class="certificate"><span class="cert-index">03</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>Angular Frontend</h3><p class="muted">9 February 2026</p></div><span class="cert-mark">↗</span></article>
+        <article class="certificate"><span class="cert-index">04</span><div><p class="card-kicker">FLASHA · WORKSHOP</p><h3>System Integration</h3><p class="muted">13 February 2026</p></div><span class="cert-mark">↗</span></article>
+      </div>
+      <p class="tiny-note">Workshop titles and dates are transcribed from the certificates you shared.</p>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-title"><p class="eyebrow">05 / MY WORK</p><h2>Selected <span>projects.</span></h2></div>
+      <div class="project-card"><div class="project-plus">＋</div><div><h3>Projects coming soon</h3><p class="muted">I will add university assignments and personal projects here as they are ready to present.</p></div></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-title"><p class="eyebrow">06 / GET IN TOUCH</p><h2>Let's <span>connect.</span></h2></div>
+      <div class="contact-card">
+        <div><h3>Thanks for visiting my portfolio.</h3><p class="muted">Feel free to contact me.</p></div>
+        <div class="contact-details">
+          <a href="mailto:abdelmonem14ussat@gmail.com">✉ <span>abdelmonem14ussat@gmail.com</span></a>
+          <a href="tel:+962000000000">☎ <span>Phone number — please confirm the digits</span></a>
+          <p>⌖ <span>Amman, Jordan</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#home"><span>&lt;/&gt;</span> Abdel <b>Monem</b></a><p>Designed & built as my personal portfolio · © <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
